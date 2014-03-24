@@ -6,5 +6,8 @@ angular.module('<%= scriptAppName %>', ['ngRoute', 'ngResource', 'ngSanitize'])
       .when('/', {
         templateUrl: 'views/home.html',
         controller: 'HomeCtrl'
+      })
+      .otherwise({
+        redirectTo: '/'
       });
   });
