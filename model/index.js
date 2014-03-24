@@ -2,6 +2,7 @@
 var util = require('util');
 var path = require('path');
 var yeoman = require('yeoman-generator');
+var angularUtils = require('../utils.js');
 
 var ModelGenerator = module.exports = function ModelGenerator(args, options, config) {
   // By calling `NamedBase` here, we get the argument to the subgenerator call
@@ -30,6 +31,7 @@ var ModelGenerator = module.exports = function ModelGenerator(args, options, con
       type: type
     });
   }
+   console.log(this._);
 
   console.log(this.props);
 
@@ -44,5 +46,23 @@ ModelGenerator.prototype.createMongooseDocument = function createMongooseDocumen
     return [p.prop, _.classify(p.type)].join(': ') + ','
   }).join('\n  ');
   this.template('model.js', path.join('db', this.name + '.js'));
+
+  this.template('router.js', path.join('routes', this.name + '.js'));
+  angularUtils.rewriteFile({
+    file: 'db/index.js',
+    needle: '// endmodel',
+    splicable: [
+      "require('./" + this.name + "');"
+    ]
+  });
+
+
+  angularUtils.rewriteFile({
+    file: 'routes/index.js',
+    needle: '// endmodel',
+    splicable: [
+      "require('./" + this.name + "')(app);"
+    ]
+  });
 
 };

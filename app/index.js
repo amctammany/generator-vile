@@ -76,7 +76,7 @@ VileGenerator.prototype.projectfiles = function projectfiles() {
   this.template('_bower.json', 'bower.json');
   this.template('_package.json', 'package.json');
 
-  this.write('db/index.js', '');
+  this.write('db/index.js', ['// model', '// endmodel'].join('\n'));
 
   this.copy('app/styles/app.css', 'app/styles/app.css');
   this.copy('app/styles/src/app.styl', 'app/styles/src/app.styl');
