@@ -10,17 +10,19 @@ var RouteGenerator = module.exports = function RouteGenerator(args, options, con
   ScriptBase.apply(this, arguments);
   this.hookFor('vile:controller');
   this.hookFor('vile:view');
+  console.log(this.group);
+  console.log(this.name);
 
-  this.groups = this.name.split(':');
+  //this.groups = this.name.split(':');
 
-  if (this.groups.length === 1) {
-    this.name = this.groups[0];
-  } else if (this.groups.length === 2) {
-    this.group = this.groups[0];
-    this.name = this.groups[1];
-  } else {
-    throw 'You fucked up';
-  }
+  //if (this.groups.length === 1) {
+    //this.name = this.groups[0];
+  //} else if (this.groups.length === 2) {
+    //this.group = this.groups[0];
+    //this.name = this.groups[1];
+  //} else {
+    //throw 'You fucked up';
+  //}
 
   console.log('You called the route subgenerator with the argument ' + this.name + '.');
 };

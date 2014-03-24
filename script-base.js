@@ -16,6 +16,18 @@ var Generator = module.exports = function Generator() {
 
   this.appname = this._.slugify(this._.humanize(this.appname));
   this.scriptAppName = this._.camelize(this.appname) + 'App';
+  this.groups = this.name.split(':');
+
+  if (this.groups.length === 1) {
+    this.name = this.groups[0];
+  } else if (this.groups.length === 2) {
+    this.group = this.groups[0];
+    this.name = this.groups[1];
+  } else {
+    throw 'You fucked up';
+  }
+  console.log(this.fullname);
+
 
   this.cameledName = this._.camelize(this.name);
   this.classedName = this._.classify(this.name);
