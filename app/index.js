@@ -52,6 +52,8 @@ VileGenerator.prototype.app = function app() {
   this.mkdir('app/styles');
   this.mkdir('app/styles/src');
 
+  this.mkdir('db');
+
   this.mkdir('config');
   this.mkdir('config/environments');
 
@@ -73,6 +75,8 @@ VileGenerator.prototype.projectfiles = function projectfiles() {
   this.copy('_karma-e2e.conf.js', 'karma-e2e.conf.js');
   this.template('_bower.json', 'bower.json');
   this.template('_package.json', 'package.json');
+
+  this.write('db/index.js', '');
 
   this.copy('app/styles/app.css', 'app/styles/app.css');
   this.copy('app/styles/src/app.styl', 'app/styles/src/app.styl');
