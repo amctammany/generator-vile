@@ -69,6 +69,8 @@ VileGenerator.prototype.projectfiles = function projectfiles() {
   this.copy('Gruntfile.js', 'Gruntfile.js');
   this.copy('env', '.env');
   this.copy('Procfile', 'Procfile');
+  this.copy('_karma.conf.js', 'karma.conf.js');
+  this.copy('_karma-e2e.conf.js', 'karma-e2e.conf.js');
   this.template('_bower.json', 'bower.json');
   this.template('_package.json', 'package.json');
 

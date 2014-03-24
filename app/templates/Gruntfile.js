@@ -27,6 +27,10 @@ module.exports = function (grunt) {
   grunt.initConfig({
     yeoman: yeomanConfig,
     watch: {
+      bower: {
+        files: ['bower.json'],
+        tasks: ['bowerInstall']
+      },
       coffee: {
         files: ['<%= yeoman.app %>/scripts/{,*/}*.coffee'],
         tasks: ['coffee:dist']
@@ -82,6 +86,13 @@ module.exports = function (grunt) {
           server: path.resolve('app.js'),
           bases: path.resolve(__dirname, yeomanConfig.dist)
         }
+      }
+    },
+
+    bowerInstall: {
+      app: {
+        src: ['<%= yeoman.app %>/index.html'],
+        ignorePath: '<%= yeoman.app %>'
       }
     },
     open: {
@@ -338,7 +349,7 @@ module.exports = function (grunt) {
 
   grunt.registerTask('default', [
     'jshint',
-    //'test',
+    'test',
     'build'
   ]);
 };

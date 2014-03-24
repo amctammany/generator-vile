@@ -8,7 +8,7 @@ describe('Controller: <%= classedName %>Ctrl', function () {
       scope;
 
   beforeEach(inject(function ($controller, $rootScope) {
-    scope = $rootScope.new();
+    scope = $rootScope.$new();
     <%= classedName %>Ctrl = $controller('<%= classedName %>Ctrl', {
       $scope: scope
     });
