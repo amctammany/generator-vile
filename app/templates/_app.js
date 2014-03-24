@@ -11,7 +11,7 @@ var mongoUrl = '';
 
 if (mongoUrl) {
   mongoose.connect(mongoUrl);
-  var db = mongoose.connection();
+  var db = mongoose.connection;
   db.once('open', function () {
     console.log('DB Connection Successful');
   });
