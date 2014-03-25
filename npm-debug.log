@@ -1,0 +1,252 @@
+0 info it worked if it ends with ok
+1 verbose cli [ '/usr/bin/node', '/usr/bin/npm', 'publish' ]
+2 info using npm@1.4.3
+3 info using node@v0.10.26
+4 verbose node symlink /usr/bin/node
+5 verbose publish [ '.' ]
+6 verbose cache add [ '.', null ]
+7 verbose cache add name=undefined spec="." args=[".",null]
+8 verbose parsed url { protocol: null,
+8 verbose parsed url   slashes: null,
+8 verbose parsed url   auth: null,
+8 verbose parsed url   host: null,
+8 verbose parsed url   port: null,
+8 verbose parsed url   hostname: null,
+8 verbose parsed url   hash: null,
+8 verbose parsed url   search: null,
+8 verbose parsed url   query: null,
+8 verbose parsed url   pathname: '.',
+8 verbose parsed url   path: '.',
+8 verbose parsed url   href: '.' }
+9 silly lockFile 3a52ce78- .
+10 verbose lock . /home/amctammany/.npm/3a52ce78-.lock
+11 verbose tar pack [ '/home/amctammany/tmp/npm-6792-06tZdKiM/1395722536344-0.07243679533712566/tmp.tgz',
+11 verbose tar pack   '.' ]
+12 verbose tarball /home/amctammany/tmp/npm-6792-06tZdKiM/1395722536344-0.07243679533712566/tmp.tgz
+13 verbose folder .
+14 info prepublish generator-vile@0.0.0
+15 silly lockFile 1f1177db-tar tar://.
+16 verbose lock tar://. /home/amctammany/.npm/1f1177db-tar.lock
+17 silly lockFile fad42df1-6344-0-07243679533712566-tmp-tgz tar:///home/amctammany/tmp/npm-6792-06tZdKiM/1395722536344-0.07243679533712566/tmp.tgz
+18 verbose lock tar:///home/amctammany/tmp/npm-6792-06tZdKiM/1395722536344-0.07243679533712566/tmp.tgz /home/amctammany/.npm/fad42df1-6344-0-07243679533712566-tmp-tgz.lock
+19 silly lockFile 1f1177db-tar tar://.
+20 silly lockFile 1f1177db-tar tar://.
+21 silly lockFile fad42df1-6344-0-07243679533712566-tmp-tgz tar:///home/amctammany/tmp/npm-6792-06tZdKiM/1395722536344-0.07243679533712566/tmp.tgz
+22 silly lockFile fad42df1-6344-0-07243679533712566-tmp-tgz tar:///home/amctammany/tmp/npm-6792-06tZdKiM/1395722536344-0.07243679533712566/tmp.tgz
+23 verbose tar unpack /home/amctammany/tmp/npm-6792-06tZdKiM/1395722536344-0.07243679533712566/tmp.tgz
+24 silly lockFile f0a9f435-6344-0-07243679533712566-package tar:///home/amctammany/tmp/npm-6792-06tZdKiM/1395722536344-0.07243679533712566/package
+25 verbose lock tar:///home/amctammany/tmp/npm-6792-06tZdKiM/1395722536344-0.07243679533712566/package /home/amctammany/.npm/f0a9f435-6344-0-07243679533712566-package.lock
+26 silly lockFile fad42df1-6344-0-07243679533712566-tmp-tgz tar:///home/amctammany/tmp/npm-6792-06tZdKiM/1395722536344-0.07243679533712566/tmp.tgz
+27 verbose lock tar:///home/amctammany/tmp/npm-6792-06tZdKiM/1395722536344-0.07243679533712566/tmp.tgz /home/amctammany/.npm/fad42df1-6344-0-07243679533712566-tmp-tgz.lock
+28 silly gunzTarPerm modes [ '755', '644' ]
+29 silly gunzTarPerm extractEntry package.json
+30 silly gunzTarPerm extractEntry .npmignore
+31 silly gunzTarPerm extractEntry README.md
+32 silly gunzTarPerm extractEntry LICENSE
+33 silly gunzTarPerm extractEntry utils.js
+34 silly gunzTarPerm extractEntry script-base.js
+35 silly gunzTarPerm extractEntry filter/index.js
+36 silly gunzTarPerm extractEntry app/index.js
+37 silly gunzTarPerm extractEntry app/templates/Gruntfile.js
+38 silly gunzTarPerm extractEntry app/templates/_app.js
+39 silly gunzTarPerm extractEntry app/templates/_karma-e2e.conf.js
+40 silly gunzTarPerm extractEntry app/templates/_karma.conf.js
+41 silly gunzTarPerm extractEntry app/templates/_server.js
+42 silly gunzTarPerm extractEntry app/templates/_bower.json
+43 silly gunzTarPerm extractEntry app/templates/_package.json
+44 silly gunzTarPerm extractEntry app/templates/routes/_index.js
+45 silly gunzTarPerm extractEntry app/templates/Procfile
+46 silly gunzTarPerm extractEntry app/templates/bowerrc
+47 silly gunzTarPerm extractEntry app/templates/config/environments/_development.js
+48 silly gunzTarPerm extractEntry app/templates/config/environments/_index.js
+49 silly gunzTarPerm extractEntry app/templates/config/environments/_production.js
+50 silly gunzTarPerm extractEntry app/templates/editorconfig
+51 silly gunzTarPerm extractEntry app/templates/env
+52 silly gunzTarPerm extractEntry app/templates/gitignore
+53 silly gunzTarPerm extractEntry app/templates/jshintrc
+54 silly gunzTarPerm extractEntry app/templates/app/index.html
+55 silly gunzTarPerm extractEntry app/templates/app/scripts/_app.js
+56 silly gunzTarPerm extractEntry app/templates/app/scripts/controllers/_home.js
+57 silly gunzTarPerm extractEntry app/templates/app/scripts/controllers/_main.js
+58 silly gunzTarPerm extractEntry app/templates/app/styles/app.css
+59 silly gunzTarPerm extractEntry app/templates/app/styles/src/app.styl
+60 silly gunzTarPerm extractEntry app/templates/app/views/home.html
+61 silly gunzTarPerm extractEntry class/index.js
+62 silly gunzTarPerm extractEntry controller/index.js
+63 silly gunzTarPerm extractEntry directive/index.js
+64 silly gunzTarPerm extractEntry factory/index.js
+65 silly gunzTarPerm extractEntry .gitattributes
+66 silly gunzTarPerm extractEntry model/index.js
+67 silly gunzTarPerm extractEntry model/templates/model.js
+68 silly gunzTarPerm extractEntry model/templates/router.js
+69 silly gunzTarPerm extractEntry model/templates/service.js
+70 silly gunzTarPerm extractEntry .travis.yml
+71 silly gunzTarPerm extractEntry .editorconfig
+72 silly gunzTarPerm extractEntry provider/index.js
+73 silly gunzTarPerm extractEntry route/index.js
+74 silly gunzTarPerm extractEntry .jshintrc
+75 silly gunzTarPerm extractEntry service/index.js
+76 silly gunzTarPerm extractEntry templates/javascript/class.js
+77 silly gunzTarPerm extractEntry templates/javascript/controller.js
+78 silly gunzTarPerm extractEntry templates/javascript/directive.js
+79 silly gunzTarPerm extractEntry templates/javascript/filter.js
+80 silly gunzTarPerm extractEntry templates/javascript/service/factory.js
+81 silly gunzTarPerm extractEntry templates/javascript/service/provider.js
+82 silly gunzTarPerm extractEntry templates/javascript/service/service.js
+83 silly gunzTarPerm extractEntry templates/javascript/spec/class.js
+84 silly gunzTarPerm extractEntry templates/javascript/spec/controller.js
+85 silly gunzTarPerm extractEntry templates/javascript/spec/directive.js
+86 silly gunzTarPerm extractEntry templates/javascript/spec/filter.js
+87 silly gunzTarPerm extractEntry templates/javascript/spec/service.js
+88 silly gunzTarPerm extractEntry templates/view.html
+89 silly gunzTarPerm extractEntry test/test-creation.js
+90 silly gunzTarPerm extractEntry test/test-load.js
+91 silly gunzTarPerm extractEntry view/index.js
+92 silly lockFile f0a9f435-6344-0-07243679533712566-package tar:///home/amctammany/tmp/npm-6792-06tZdKiM/1395722536344-0.07243679533712566/package
+93 silly lockFile f0a9f435-6344-0-07243679533712566-package tar:///home/amctammany/tmp/npm-6792-06tZdKiM/1395722536344-0.07243679533712566/package
+94 silly lockFile fad42df1-6344-0-07243679533712566-tmp-tgz tar:///home/amctammany/tmp/npm-6792-06tZdKiM/1395722536344-0.07243679533712566/tmp.tgz
+95 silly lockFile fad42df1-6344-0-07243679533712566-tmp-tgz tar:///home/amctammany/tmp/npm-6792-06tZdKiM/1395722536344-0.07243679533712566/tmp.tgz
+96 verbose tar pack [ '/home/amctammany/.npm/generator-vile/0.0.0/package.tgz',
+96 verbose tar pack   '/home/amctammany/tmp/npm-6792-06tZdKiM/1395722536344-0.07243679533712566/package' ]
+97 verbose tarball /home/amctammany/.npm/generator-vile/0.0.0/package.tgz
+98 verbose folder /home/amctammany/tmp/npm-6792-06tZdKiM/1395722536344-0.07243679533712566/package
+99 silly lockFile f0a9f435-6344-0-07243679533712566-package tar:///home/amctammany/tmp/npm-6792-06tZdKiM/1395722536344-0.07243679533712566/package
+100 verbose lock tar:///home/amctammany/tmp/npm-6792-06tZdKiM/1395722536344-0.07243679533712566/package /home/amctammany/.npm/f0a9f435-6344-0-07243679533712566-package.lock
+101 silly lockFile 4af41ebc-generator-vile-0-0-0-package-tgz tar:///home/amctammany/.npm/generator-vile/0.0.0/package.tgz
+102 verbose lock tar:///home/amctammany/.npm/generator-vile/0.0.0/package.tgz /home/amctammany/.npm/4af41ebc-generator-vile-0-0-0-package-tgz.lock
+103 silly lockFile f0a9f435-6344-0-07243679533712566-package tar:///home/amctammany/tmp/npm-6792-06tZdKiM/1395722536344-0.07243679533712566/package
+104 silly lockFile f0a9f435-6344-0-07243679533712566-package tar:///home/amctammany/tmp/npm-6792-06tZdKiM/1395722536344-0.07243679533712566/package
+105 silly lockFile 4af41ebc-generator-vile-0-0-0-package-tgz tar:///home/amctammany/.npm/generator-vile/0.0.0/package.tgz
+106 silly lockFile 4af41ebc-generator-vile-0-0-0-package-tgz tar:///home/amctammany/.npm/generator-vile/0.0.0/package.tgz
+107 silly lockFile 64b84b5e-npm-generator-vile-0-0-0-package /home/amctammany/.npm/generator-vile/0.0.0/package
+108 verbose lock /home/amctammany/.npm/generator-vile/0.0.0/package /home/amctammany/.npm/64b84b5e-npm-generator-vile-0-0-0-package.lock
+109 silly lockFile 64b84b5e-npm-generator-vile-0-0-0-package /home/amctammany/.npm/generator-vile/0.0.0/package
+110 silly lockFile 64b84b5e-npm-generator-vile-0-0-0-package /home/amctammany/.npm/generator-vile/0.0.0/package
+111 verbose tar unpack /home/amctammany/.npm/generator-vile/0.0.0/package.tgz
+112 silly lockFile ac3e1cec-npm-generator-vile-0-0-0-package tar:///home/amctammany/.npm/generator-vile/0.0.0/package
+113 verbose lock tar:///home/amctammany/.npm/generator-vile/0.0.0/package /home/amctammany/.npm/ac3e1cec-npm-generator-vile-0-0-0-package.lock
+114 silly lockFile 4af41ebc-generator-vile-0-0-0-package-tgz tar:///home/amctammany/.npm/generator-vile/0.0.0/package.tgz
+115 verbose lock tar:///home/amctammany/.npm/generator-vile/0.0.0/package.tgz /home/amctammany/.npm/4af41ebc-generator-vile-0-0-0-package-tgz.lock
+116 silly gunzTarPerm modes [ '755', '644' ]
+117 silly gunzTarPerm extractEntry package.json
+118 silly gunzTarPerm extractEntry .npmignore
+119 silly gunzTarPerm extractEntry README.md
+120 silly gunzTarPerm extractEntry LICENSE
+121 silly gunzTarPerm extractEntry script-base.js
+122 silly gunzTarPerm extractEntry utils.js
+123 silly gunzTarPerm extractEntry factory/index.js
+124 silly gunzTarPerm extractEntry app/index.js
+125 silly gunzTarPerm extractEntry app/templates/Gruntfile.js
+126 silly gunzTarPerm extractEntry app/templates/_app.js
+127 silly gunzTarPerm extractEntry app/templates/_karma-e2e.conf.js
+128 silly gunzTarPerm extractEntry app/templates/_karma.conf.js
+129 silly gunzTarPerm extractEntry app/templates/_server.js
+130 silly gunzTarPerm extractEntry app/templates/_bower.json
+131 silly gunzTarPerm extractEntry app/templates/_package.json
+132 silly gunzTarPerm extractEntry app/templates/routes/_index.js
+133 silly gunzTarPerm extractEntry app/templates/Procfile
+134 silly gunzTarPerm extractEntry app/templates/bowerrc
+135 silly gunzTarPerm extractEntry app/templates/config/environments/_development.js
+136 silly gunzTarPerm extractEntry app/templates/config/environments/_index.js
+137 silly gunzTarPerm extractEntry app/templates/config/environments/_production.js
+138 silly gunzTarPerm extractEntry app/templates/editorconfig
+139 silly gunzTarPerm extractEntry app/templates/env
+140 silly gunzTarPerm extractEntry app/templates/gitignore
+141 silly gunzTarPerm extractEntry app/templates/jshintrc
+142 silly gunzTarPerm extractEntry app/templates/app/index.html
+143 silly gunzTarPerm extractEntry app/templates/app/scripts/_app.js
+144 silly gunzTarPerm extractEntry app/templates/app/scripts/controllers/_home.js
+145 silly gunzTarPerm extractEntry app/templates/app/scripts/controllers/_main.js
+146 silly gunzTarPerm extractEntry app/templates/app/styles/app.css
+147 silly gunzTarPerm extractEntry app/templates/app/styles/src/app.styl
+148 silly gunzTarPerm extractEntry app/templates/app/views/home.html
+149 silly gunzTarPerm extractEntry class/index.js
+150 silly gunzTarPerm extractEntry controller/index.js
+151 silly gunzTarPerm extractEntry directive/index.js
+152 silly gunzTarPerm extractEntry .gitattributes
+153 silly gunzTarPerm extractEntry filter/index.js
+154 silly gunzTarPerm extractEntry model/index.js
+155 silly gunzTarPerm extractEntry model/templates/model.js
+156 silly gunzTarPerm extractEntry model/templates/router.js
+157 silly gunzTarPerm extractEntry model/templates/service.js
+158 silly gunzTarPerm extractEntry .travis.yml
+159 silly gunzTarPerm extractEntry provider/index.js
+160 silly gunzTarPerm extractEntry route/index.js
+161 silly gunzTarPerm extractEntry .jshintrc
+162 silly gunzTarPerm extractEntry service/index.js
+163 silly gunzTarPerm extractEntry templates/javascript/class.js
+164 silly gunzTarPerm extractEntry templates/javascript/controller.js
+165 silly gunzTarPerm extractEntry templates/javascript/directive.js
+166 silly gunzTarPerm extractEntry templates/javascript/filter.js
+167 silly gunzTarPerm extractEntry templates/javascript/service/factory.js
+168 silly gunzTarPerm extractEntry templates/javascript/service/provider.js
+169 silly gunzTarPerm extractEntry templates/javascript/service/service.js
+170 silly gunzTarPerm extractEntry templates/javascript/spec/class.js
+171 silly gunzTarPerm extractEntry templates/javascript/spec/controller.js
+172 silly gunzTarPerm extractEntry templates/javascript/spec/directive.js
+173 silly gunzTarPerm extractEntry templates/javascript/spec/filter.js
+174 silly gunzTarPerm extractEntry templates/javascript/spec/service.js
+175 silly gunzTarPerm extractEntry templates/view.html
+176 silly gunzTarPerm extractEntry test/test-creation.js
+177 silly gunzTarPerm extractEntry test/test-load.js
+178 silly gunzTarPerm extractEntry .editorconfig
+179 silly gunzTarPerm extractEntry view/index.js
+180 silly lockFile ac3e1cec-npm-generator-vile-0-0-0-package tar:///home/amctammany/.npm/generator-vile/0.0.0/package
+181 silly lockFile ac3e1cec-npm-generator-vile-0-0-0-package tar:///home/amctammany/.npm/generator-vile/0.0.0/package
+182 silly lockFile 4af41ebc-generator-vile-0-0-0-package-tgz tar:///home/amctammany/.npm/generator-vile/0.0.0/package.tgz
+183 silly lockFile 4af41ebc-generator-vile-0-0-0-package-tgz tar:///home/amctammany/.npm/generator-vile/0.0.0/package.tgz
+184 verbose chmod /home/amctammany/.npm/generator-vile/0.0.0/package.tgz 644
+185 verbose chown /home/amctammany/.npm/generator-vile/0.0.0/package.tgz [ 1000, 1000 ]
+186 silly lockFile 3a52ce78- .
+187 silly lockFile 3a52ce78- .
+188 silly publish { name: 'generator-vile',
+188 silly publish   version: '0.0.0',
+188 silly publish   description: 'A generator for Yeoman',
+188 silly publish   keywords: [ 'yeoman-generator' ],
+188 silly publish   homepage: 'https://github.com/amctammany/generator-vile',
+188 silly publish   bugs: { url: 'https://github.com/amctammany/generator-vile/issues' },
+188 silly publish   author:
+188 silly publish    { name: 'Alex McTammany',
+188 silly publish      email: 'apmctammany@gmail.com',
+188 silly publish      url: 'https://github.com/amctammany' },
+188 silly publish   main: 'app/index.js',
+188 silly publish   repository:
+188 silly publish    { type: 'git',
+188 silly publish      url: 'git://github.com/amctammany/generator-vile.git' },
+188 silly publish   scripts: { test: 'mocha' },
+188 silly publish   dependencies: { 'yeoman-generator': '~0.14.0', wiredep: '^1.3.3' },
+188 silly publish   devDependencies: { mocha: '~1.14.0' },
+188 silly publish   peerDependencies: { yo: '>=1.0.0' },
+188 silly publish   engines: { node: '>=0.8.0', npm: '>=1.2.10' },
+188 silly publish   licenses: [ { type: 'MIT' } ],
+188 silly publish   readme: '# generator-vile [![Build Status](https://secure.travis-ci.org/amctammany/generator-vile.png?branch=master)](https://travis-ci.org/amctammany/generator-vile)\n\n> Yeoman generator that goes beyond the MEAN stack. Uses MongoDB, Express, Angular, and Stylus and is configured for easy deployment to Heroku. Enables easier directory system by calling subgenerators with groups.\n\n## Usage\n\nInstall `generator-vile`:\n```\nnpm install -g generator-vile\n```\n\nMake a new directory and `cd` into it:\n```\nmkdir new-project && cd $_\n```\n\nrun `yo vile`\n```\nyo vile\n```\n\nRun `grunt` to build and `grunt server` to start local server\n\n## Available generators:\n\n* [vile](#app) (aka [vile:app](#app))\n* [vile:controller](#controller)\n* [vile:directive](#directive)\n* [vile:filter](#filter)\n* [vile:route](#route)\n* [vile:service](#service)\n* [vile:provider](#provider)\n* [vile:factory](#factory)\n* [vile:class](#class)\n* [vile:view](#view)\n* [vile:model](#model)\n\n\n### App\nSets up a new AngularJS app using the MEAN stack. Automatically links to Twitter Bootstrap via CDN.\n\nExample:\n```bash\nyo vile\n```\n\n### Route\nGenerates a controller and view within an optional group folder. Configures a route in `app/scripts/app.js` connecting them.\n\nExample:\n```bash\nyo angular:route posts:show\n```\n\nProduces `app/scripts/posts/show.js`:\n```javascript\nangular.module(\'myApp\').controller(\'ShowCtrl\', function ($scope) {\n  $scope.foo = \'foo\';\n});\n```\n\nProduces `app/views/posts/show.html`:\n```html\n<p>This is the Posts:Show view</p>\n```\n### Model\nGenerates a Mongoose document with given parameters. Adds RESTful backend routes to Express server.\nRESTful ID defaults to `name` property if exists, else uses `_id`. Can be overridden by `--identifier` option.\nGenerates Angular $resource for frontend.\nUse `:` to attach types to property, default is `String`.\n\nExample:\n```bash\nyo vile:model post name description date:date ranking:number\n```\n\nProduces `db/post.js`\n```javascript\n//... Dependencies\n\nvar PostSchema = new Schema({\n  name: String,\n  description: String,\n  date: Date,\n  ranking: Number,\n  urlString: String\n});\n\nPostSchema.pre(\'save\', function (next) {\n  if (this.name) {\n    this.urlString = this.name.toLocaleLowerCase().replace(/\\s+/g, \'-\');\n  }\n  next();\n});\n\nmongoose.model(\'Post\', PostSchema);\n```\n\nProduces `routes/posts.js`:\n```javascript\nvar mongoose = require(\'mongoose\');\n\nmodule.exports = function (app) {\n  var Post = mongoose.model(\'Post\');\n\n  // GET /posts => Index\n  app.get(\'/posts\', function (req, res) {\n    Post.find()\n      .exec(function (err, posts) {\n        if (err) { console.log(err); }\n        res.send(posts);\n      });\n  });\n\n  // GET /posts/id => Show\n  app.get(\'/posts/:id\', function (req, res) {\n    Post.findOne({urlString: req.params.id})\n      .exec(function (err, post) {\n        if (err) { console.log(err); }\n        res.send(post);\n      });\n  });\n\n  // DEL /posts/id => Remove\n  app.del(\'/posts/:id\', function (req, res) {\n    Post.findOneAndRemove({urlString: req.params.id}, function (err, post) {\n      if (err) { console.log(err); }\n      res.send(post);\n    });\n  });\n\n  // POST /posts => Create\n  app.post(\'/posts\', function (req, res) {\n    var post = new Post(req.body);\n    post.save(function (err) {\n      if (err) { console.log(err); }\n      res.send(post);\n    });\n  });\n\n  // POST /posts/id => Update\n  app.post(\'/posts\', function (req, res) {\n    Post.findOne({urlString: req.params.id}, function (err, post) {\n      if (err) {console.log(err);}\n      \n      post.name = req.body.name\n      \n      post.description = req.body.description\n      \n      post.date = req.body.date\n      \n      post.ranking = req.body.ranking\n      \n      post.save(function (err) {\n        if (err) { console.log(err); }\n        res.send(post);\n      });\n    });\n  });\n\n};\n```\n\n\n### Controller\nGenerates a controller file within an optional group folder\n\nExample:\n```bash\nyo vile:controller posts:new\n```\n\nProduces `app/scripts/posts/controllers/new.js`:\n```javascript\nangular.module(\'myApp\').controller(\'NewCtrl\', function ($scope) {\n  // ...\n});\n```\n\n### Directive\nGenerates a directive file within an optional group folder\n\nExample:\n```bash\nyo vile:directive posts:details\n```\n\nProduces `app/scripts/posts/directives/details.js`:\n```javascript\nangular.module(\'myApp\').directive(\'details\', function () {\n\n  return {\n   template: \'<div></div>\',\n   restrict: \'E\',\n   link: function postLink(scope, element, attrs) {\n    element.text(\'this is the details directive\');\n   }\n  };\n});\n```\n\n### Filter\nGenerates a filter within an optional group folder\n\nExample:\n```bash\nyo vile:filter groupBy\n```\n\nProduces `app/scripts/filters/groupBy.js`:\n```javascript\nangular.module(myApp).filter(\'groupBy\', function () {\n  return function (input) {\n    return \'groupBy filter:\' + input;\n  };\n});\n```\n\n### View\nGenerates an HTML view file within an optional group folder\n\nExample:\n```bash\nyo vile:view posts:new\n```\n\nProduces `app/views/posts/new.html`:\n```html\n<p>This is the Page:View page</p>\n```\n\n### Service\nGenerates an AngularJS service within an optional group folder.\n\nExample:\n```bash\nyo vile:service myService\n```\n\nProduces `app/scripts/services/myService.js`:\n```javascript\nangular.module(\'myApp\').service(\'myService\', function () {\n  // ...\n});\n```\n\n\n### Add to Index\nBy default, new scripts are added to index.html.\nTo skip this behaviour, pass in the skip-add argument:\n```bash\nyo vile:service serviceName --skip-add\n```\n\n## Bower Components\nThe [app](#app) generator always installs these packages:\n* jQuery\n* angular\n* angular-resource\n* angular-route\n* angular-cookies\n* angular-sanitzie\n* angular-mocks\n* angular-scenario\n\n## License\n\n[MIT License](http://en.wikipedia.org/wiki/MIT_License)\n',
+188 silly publish   readmeFilename: 'README.md',
+188 silly publish   _id: 'generator-vile@0.0.0',
+188 silly publish   dist: { shasum: '011f63954d808a2c57dc7b71e0e52fb4a5d94896' },
+188 silly publish   _from: '.' }
+189 verbose url raw generator-vile
+190 verbose url resolving [ 'https://registry.npmjs.org/', './generator-vile' ]
+191 verbose url resolved https://registry.npmjs.org/generator-vile
+192 info trying registry request attempt 1 at 00:42:16
+193 http PUT https://registry.npmjs.org/generator-vile
+194 http 400 https://registry.npmjs.org/generator-vile
+195 error publish Failed PUT 400
+196 error Error: illegal_database_name Name: 'error.html'. Only lowercase characters (a-z), digits (0-9), and any of the characters _, $, (, ), +, -, and / are allowed. Must begin with a letter.: generator-vile
+196 error     at RegClient.<anonymous> (/usr/lib/node_modules/npm/node_modules/npm-registry-client/lib/request.js:237:14)
+196 error     at Request.self.callback (/usr/lib/node_modules/npm/node_modules/request/request.js:123:22)
+196 error     at Request.EventEmitter.emit (events.js:98:17)
+196 error     at Request.<anonymous> (/usr/lib/node_modules/npm/node_modules/request/request.js:893:14)
+196 error     at Request.EventEmitter.emit (events.js:117:20)
+196 error     at IncomingMessage.<anonymous> (/usr/lib/node_modules/npm/node_modules/request/request.js:844:12)
+196 error     at IncomingMessage.EventEmitter.emit (events.js:117:20)
+196 error     at _stream_readable.js:920:16
+196 error     at process._tickCallback (node.js:415:13)
+197 error If you need help, you may report this *entire* log,
+197 error including the npm and node versions, at:
+197 error     <http://github.com/npm/npm/issues>
+198 error System Linux 3.11.0-18-generic
+199 error command "/usr/bin/node" "/usr/bin/npm" "publish"
+200 error cwd /home/amctammany/newJS/generator-vile
+201 error node -v v0.10.26
+202 error npm -v 1.4.3
+203 verbose exit [ 1, true ]
