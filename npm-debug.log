@@ -1,11 +1,11 @@
 0 info it worked if it ends with ok
-1 verbose cli [ '/usr/bin/node', '/usr/bin/npm', 'publish' ]
+1 verbose cli [ '/usr/bin/node', '/usr/bin/npm', 'publish', './' ]
 2 info using npm@1.4.3
 3 info using node@v0.10.26
 4 verbose node symlink /usr/bin/node
-5 verbose publish [ '.' ]
-6 verbose cache add [ '.', null ]
-7 verbose cache add name=undefined spec="." args=[".",null]
+5 verbose publish [ './' ]
+6 verbose cache add [ './', null ]
+7 verbose cache add name=undefined spec="./" args=["./",null]
 8 verbose parsed url { protocol: null,
 8 verbose parsed url   slashes: null,
 8 verbose parsed url   auth: null,
@@ -15,29 +15,29 @@
 8 verbose parsed url   hash: null,
 8 verbose parsed url   search: null,
 8 verbose parsed url   query: null,
-8 verbose parsed url   pathname: '.',
-8 verbose parsed url   path: '.',
-8 verbose parsed url   href: '.' }
-9 silly lockFile 3a52ce78- .
-10 verbose lock . /home/amctammany/.npm/3a52ce78-.lock
-11 verbose tar pack [ '/home/amctammany/tmp/npm-6792-06tZdKiM/1395722536344-0.07243679533712566/tmp.tgz',
-11 verbose tar pack   '.' ]
-12 verbose tarball /home/amctammany/tmp/npm-6792-06tZdKiM/1395722536344-0.07243679533712566/tmp.tgz
-13 verbose folder .
+8 verbose parsed url   pathname: './',
+8 verbose parsed url   path: './',
+8 verbose parsed url   href: './' }
+9 silly lockFile 0ee6c175- ./
+10 verbose lock ./ /home/amctammany/.npm/0ee6c175-.lock
+11 verbose tar pack [ '/home/amctammany/tmp/npm-7551-wg8kouwQ/1395723534394-0.9114929637871683/tmp.tgz',
+11 verbose tar pack   './' ]
+12 verbose tarball /home/amctammany/tmp/npm-7551-wg8kouwQ/1395723534394-0.9114929637871683/tmp.tgz
+13 verbose folder ./
 14 info prepublish generator-vile@0.0.0
-15 silly lockFile 1f1177db-tar tar://.
-16 verbose lock tar://. /home/amctammany/.npm/1f1177db-tar.lock
-17 silly lockFile fad42df1-6344-0-07243679533712566-tmp-tgz tar:///home/amctammany/tmp/npm-6792-06tZdKiM/1395722536344-0.07243679533712566/tmp.tgz
-18 verbose lock tar:///home/amctammany/tmp/npm-6792-06tZdKiM/1395722536344-0.07243679533712566/tmp.tgz /home/amctammany/.npm/fad42df1-6344-0-07243679533712566-tmp-tgz.lock
-19 silly lockFile 1f1177db-tar tar://.
-20 silly lockFile 1f1177db-tar tar://.
-21 silly lockFile fad42df1-6344-0-07243679533712566-tmp-tgz tar:///home/amctammany/tmp/npm-6792-06tZdKiM/1395722536344-0.07243679533712566/tmp.tgz
-22 silly lockFile fad42df1-6344-0-07243679533712566-tmp-tgz tar:///home/amctammany/tmp/npm-6792-06tZdKiM/1395722536344-0.07243679533712566/tmp.tgz
-23 verbose tar unpack /home/amctammany/tmp/npm-6792-06tZdKiM/1395722536344-0.07243679533712566/tmp.tgz
-24 silly lockFile f0a9f435-6344-0-07243679533712566-package tar:///home/amctammany/tmp/npm-6792-06tZdKiM/1395722536344-0.07243679533712566/package
-25 verbose lock tar:///home/amctammany/tmp/npm-6792-06tZdKiM/1395722536344-0.07243679533712566/package /home/amctammany/.npm/f0a9f435-6344-0-07243679533712566-package.lock
-26 silly lockFile fad42df1-6344-0-07243679533712566-tmp-tgz tar:///home/amctammany/tmp/npm-6792-06tZdKiM/1395722536344-0.07243679533712566/tmp.tgz
-27 verbose lock tar:///home/amctammany/tmp/npm-6792-06tZdKiM/1395722536344-0.07243679533712566/tmp.tgz /home/amctammany/.npm/fad42df1-6344-0-07243679533712566-tmp-tgz.lock
+15 silly lockFile 04cb2bca-tar tar://./
+16 verbose lock tar://./ /home/amctammany/.npm/04cb2bca-tar.lock
+17 silly lockFile 05fac3fa-34394-0-9114929637871683-tmp-tgz tar:///home/amctammany/tmp/npm-7551-wg8kouwQ/1395723534394-0.9114929637871683/tmp.tgz
+18 verbose lock tar:///home/amctammany/tmp/npm-7551-wg8kouwQ/1395723534394-0.9114929637871683/tmp.tgz /home/amctammany/.npm/05fac3fa-34394-0-9114929637871683-tmp-tgz.lock
+19 silly lockFile 04cb2bca-tar tar://./
+20 silly lockFile 04cb2bca-tar tar://./
+21 silly lockFile 05fac3fa-34394-0-9114929637871683-tmp-tgz tar:///home/amctammany/tmp/npm-7551-wg8kouwQ/1395723534394-0.9114929637871683/tmp.tgz
+22 silly lockFile 05fac3fa-34394-0-9114929637871683-tmp-tgz tar:///home/amctammany/tmp/npm-7551-wg8kouwQ/1395723534394-0.9114929637871683/tmp.tgz
+23 verbose tar unpack /home/amctammany/tmp/npm-7551-wg8kouwQ/1395723534394-0.9114929637871683/tmp.tgz
+24 silly lockFile ed161909-34394-0-9114929637871683-package tar:///home/amctammany/tmp/npm-7551-wg8kouwQ/1395723534394-0.9114929637871683/package
+25 verbose lock tar:///home/amctammany/tmp/npm-7551-wg8kouwQ/1395723534394-0.9114929637871683/package /home/amctammany/.npm/ed161909-34394-0-9114929637871683-package.lock
+26 silly lockFile 05fac3fa-34394-0-9114929637871683-tmp-tgz tar:///home/amctammany/tmp/npm-7551-wg8kouwQ/1395723534394-0.9114929637871683/tmp.tgz
+27 verbose lock tar:///home/amctammany/tmp/npm-7551-wg8kouwQ/1395723534394-0.9114929637871683/tmp.tgz /home/amctammany/.npm/05fac3fa-34394-0-9114929637871683-tmp-tgz.lock
 28 silly gunzTarPerm modes [ '755', '644' ]
 29 silly gunzTarPerm extractEntry package.json
 30 silly gunzTarPerm extractEntry .npmignore
@@ -102,20 +102,20 @@
 89 silly gunzTarPerm extractEntry test/test-creation.js
 90 silly gunzTarPerm extractEntry test/test-load.js
 91 silly gunzTarPerm extractEntry view/index.js
-92 silly lockFile f0a9f435-6344-0-07243679533712566-package tar:///home/amctammany/tmp/npm-6792-06tZdKiM/1395722536344-0.07243679533712566/package
-93 silly lockFile f0a9f435-6344-0-07243679533712566-package tar:///home/amctammany/tmp/npm-6792-06tZdKiM/1395722536344-0.07243679533712566/package
-94 silly lockFile fad42df1-6344-0-07243679533712566-tmp-tgz tar:///home/amctammany/tmp/npm-6792-06tZdKiM/1395722536344-0.07243679533712566/tmp.tgz
-95 silly lockFile fad42df1-6344-0-07243679533712566-tmp-tgz tar:///home/amctammany/tmp/npm-6792-06tZdKiM/1395722536344-0.07243679533712566/tmp.tgz
+92 silly lockFile ed161909-34394-0-9114929637871683-package tar:///home/amctammany/tmp/npm-7551-wg8kouwQ/1395723534394-0.9114929637871683/package
+93 silly lockFile ed161909-34394-0-9114929637871683-package tar:///home/amctammany/tmp/npm-7551-wg8kouwQ/1395723534394-0.9114929637871683/package
+94 silly lockFile 05fac3fa-34394-0-9114929637871683-tmp-tgz tar:///home/amctammany/tmp/npm-7551-wg8kouwQ/1395723534394-0.9114929637871683/tmp.tgz
+95 silly lockFile 05fac3fa-34394-0-9114929637871683-tmp-tgz tar:///home/amctammany/tmp/npm-7551-wg8kouwQ/1395723534394-0.9114929637871683/tmp.tgz
 96 verbose tar pack [ '/home/amctammany/.npm/generator-vile/0.0.0/package.tgz',
-96 verbose tar pack   '/home/amctammany/tmp/npm-6792-06tZdKiM/1395722536344-0.07243679533712566/package' ]
+96 verbose tar pack   '/home/amctammany/tmp/npm-7551-wg8kouwQ/1395723534394-0.9114929637871683/package' ]
 97 verbose tarball /home/amctammany/.npm/generator-vile/0.0.0/package.tgz
-98 verbose folder /home/amctammany/tmp/npm-6792-06tZdKiM/1395722536344-0.07243679533712566/package
-99 silly lockFile f0a9f435-6344-0-07243679533712566-package tar:///home/amctammany/tmp/npm-6792-06tZdKiM/1395722536344-0.07243679533712566/package
-100 verbose lock tar:///home/amctammany/tmp/npm-6792-06tZdKiM/1395722536344-0.07243679533712566/package /home/amctammany/.npm/f0a9f435-6344-0-07243679533712566-package.lock
+98 verbose folder /home/amctammany/tmp/npm-7551-wg8kouwQ/1395723534394-0.9114929637871683/package
+99 silly lockFile ed161909-34394-0-9114929637871683-package tar:///home/amctammany/tmp/npm-7551-wg8kouwQ/1395723534394-0.9114929637871683/package
+100 verbose lock tar:///home/amctammany/tmp/npm-7551-wg8kouwQ/1395723534394-0.9114929637871683/package /home/amctammany/.npm/ed161909-34394-0-9114929637871683-package.lock
 101 silly lockFile 4af41ebc-generator-vile-0-0-0-package-tgz tar:///home/amctammany/.npm/generator-vile/0.0.0/package.tgz
 102 verbose lock tar:///home/amctammany/.npm/generator-vile/0.0.0/package.tgz /home/amctammany/.npm/4af41ebc-generator-vile-0-0-0-package-tgz.lock
-103 silly lockFile f0a9f435-6344-0-07243679533712566-package tar:///home/amctammany/tmp/npm-6792-06tZdKiM/1395722536344-0.07243679533712566/package
-104 silly lockFile f0a9f435-6344-0-07243679533712566-package tar:///home/amctammany/tmp/npm-6792-06tZdKiM/1395722536344-0.07243679533712566/package
+103 silly lockFile ed161909-34394-0-9114929637871683-package tar:///home/amctammany/tmp/npm-7551-wg8kouwQ/1395723534394-0.9114929637871683/package
+104 silly lockFile ed161909-34394-0-9114929637871683-package tar:///home/amctammany/tmp/npm-7551-wg8kouwQ/1395723534394-0.9114929637871683/package
 105 silly lockFile 4af41ebc-generator-vile-0-0-0-package-tgz tar:///home/amctammany/.npm/generator-vile/0.0.0/package.tgz
 106 silly lockFile 4af41ebc-generator-vile-0-0-0-package-tgz tar:///home/amctammany/.npm/generator-vile/0.0.0/package.tgz
 107 silly lockFile 64b84b5e-npm-generator-vile-0-0-0-package /home/amctammany/.npm/generator-vile/0.0.0/package
@@ -197,8 +197,8 @@
 183 silly lockFile 4af41ebc-generator-vile-0-0-0-package-tgz tar:///home/amctammany/.npm/generator-vile/0.0.0/package.tgz
 184 verbose chmod /home/amctammany/.npm/generator-vile/0.0.0/package.tgz 644
 185 verbose chown /home/amctammany/.npm/generator-vile/0.0.0/package.tgz [ 1000, 1000 ]
-186 silly lockFile 3a52ce78- .
-187 silly lockFile 3a52ce78- .
+186 silly lockFile 0ee6c175- ./
+187 silly lockFile 0ee6c175- ./
 188 silly publish { name: 'generator-vile',
 188 silly publish   version: '0.0.0',
 188 silly publish   description: 'A generator for Yeoman',
@@ -222,16 +222,18 @@
 188 silly publish   readme: '# generator-vile [![Build Status](https://secure.travis-ci.org/amctammany/generator-vile.png?branch=master)](https://travis-ci.org/amctammany/generator-vile)\n\n> Yeoman generator that goes beyond the MEAN stack. Uses MongoDB, Express, Angular, and Stylus and is configured for easy deployment to Heroku. Enables easier directory system by calling subgenerators with groups.\n\n## Usage\n\nInstall `generator-vile`:\n```\nnpm install -g generator-vile\n```\n\nMake a new directory and `cd` into it:\n```\nmkdir new-project && cd $_\n```\n\nrun `yo vile`\n```\nyo vile\n```\n\nRun `grunt` to build and `grunt server` to start local server\n\n## Available generators:\n\n* [vile](#app) (aka [vile:app](#app))\n* [vile:controller](#controller)\n* [vile:directive](#directive)\n* [vile:filter](#filter)\n* [vile:route](#route)\n* [vile:service](#service)\n* [vile:provider](#provider)\n* [vile:factory](#factory)\n* [vile:class](#class)\n* [vile:view](#view)\n* [vile:model](#model)\n\n\n### App\nSets up a new AngularJS app using the MEAN stack. Automatically links to Twitter Bootstrap via CDN.\n\nExample:\n```bash\nyo vile\n```\n\n### Route\nGenerates a controller and view within an optional group folder. Configures a route in `app/scripts/app.js` connecting them.\n\nExample:\n```bash\nyo angular:route posts:show\n```\n\nProduces `app/scripts/posts/show.js`:\n```javascript\nangular.module(\'myApp\').controller(\'ShowCtrl\', function ($scope) {\n  $scope.foo = \'foo\';\n});\n```\n\nProduces `app/views/posts/show.html`:\n```html\n<p>This is the Posts:Show view</p>\n```\n### Model\nGenerates a Mongoose document with given parameters. Adds RESTful backend routes to Express server.\nRESTful ID defaults to `name` property if exists, else uses `_id`. Can be overridden by `--identifier` option.\nGenerates Angular $resource for frontend.\nUse `:` to attach types to property, default is `String`.\n\nExample:\n```bash\nyo vile:model post name description date:date ranking:number\n```\n\nProduces `db/post.js`\n```javascript\n//... Dependencies\n\nvar PostSchema = new Schema({\n  name: String,\n  description: String,\n  date: Date,\n  ranking: Number,\n  urlString: String\n});\n\nPostSchema.pre(\'save\', function (next) {\n  if (this.name) {\n    this.urlString = this.name.toLocaleLowerCase().replace(/\\s+/g, \'-\');\n  }\n  next();\n});\n\nmongoose.model(\'Post\', PostSchema);\n```\n\nProduces `routes/posts.js`:\n```javascript\nvar mongoose = require(\'mongoose\');\n\nmodule.exports = function (app) {\n  var Post = mongoose.model(\'Post\');\n\n  // GET /posts => Index\n  app.get(\'/posts\', function (req, res) {\n    Post.find()\n      .exec(function (err, posts) {\n        if (err) { console.log(err); }\n        res.send(posts);\n      });\n  });\n\n  // GET /posts/id => Show\n  app.get(\'/posts/:id\', function (req, res) {\n    Post.findOne({urlString: req.params.id})\n      .exec(function (err, post) {\n        if (err) { console.log(err); }\n        res.send(post);\n      });\n  });\n\n  // DEL /posts/id => Remove\n  app.del(\'/posts/:id\', function (req, res) {\n    Post.findOneAndRemove({urlString: req.params.id}, function (err, post) {\n      if (err) { console.log(err); }\n      res.send(post);\n    });\n  });\n\n  // POST /posts => Create\n  app.post(\'/posts\', function (req, res) {\n    var post = new Post(req.body);\n    post.save(function (err) {\n      if (err) { console.log(err); }\n      res.send(post);\n    });\n  });\n\n  // POST /posts/id => Update\n  app.post(\'/posts\', function (req, res) {\n    Post.findOne({urlString: req.params.id}, function (err, post) {\n      if (err) {console.log(err);}\n      \n      post.name = req.body.name\n      \n      post.description = req.body.description\n      \n      post.date = req.body.date\n      \n      post.ranking = req.body.ranking\n      \n      post.save(function (err) {\n        if (err) { console.log(err); }\n        res.send(post);\n      });\n    });\n  });\n\n};\n```\n\n\n### Controller\nGenerates a controller file within an optional group folder\n\nExample:\n```bash\nyo vile:controller posts:new\n```\n\nProduces `app/scripts/posts/controllers/new.js`:\n```javascript\nangular.module(\'myApp\').controller(\'NewCtrl\', function ($scope) {\n  // ...\n});\n```\n\n### Directive\nGenerates a directive file within an optional group folder\n\nExample:\n```bash\nyo vile:directive posts:details\n```\n\nProduces `app/scripts/posts/directives/details.js`:\n```javascript\nangular.module(\'myApp\').directive(\'details\', function () {\n\n  return {\n   template: \'<div></div>\',\n   restrict: \'E\',\n   link: function postLink(scope, element, attrs) {\n    element.text(\'this is the details directive\');\n   }\n  };\n});\n```\n\n### Filter\nGenerates a filter within an optional group folder\n\nExample:\n```bash\nyo vile:filter groupBy\n```\n\nProduces `app/scripts/filters/groupBy.js`:\n```javascript\nangular.module(myApp).filter(\'groupBy\', function () {\n  return function (input) {\n    return \'groupBy filter:\' + input;\n  };\n});\n```\n\n### View\nGenerates an HTML view file within an optional group folder\n\nExample:\n```bash\nyo vile:view posts:new\n```\n\nProduces `app/views/posts/new.html`:\n```html\n<p>This is the Page:View page</p>\n```\n\n### Service\nGenerates an AngularJS service within an optional group folder.\n\nExample:\n```bash\nyo vile:service myService\n```\n\nProduces `app/scripts/services/myService.js`:\n```javascript\nangular.module(\'myApp\').service(\'myService\', function () {\n  // ...\n});\n```\n\n\n### Add to Index\nBy default, new scripts are added to index.html.\nTo skip this behaviour, pass in the skip-add argument:\n```bash\nyo vile:service serviceName --skip-add\n```\n\n## Bower Components\nThe [app](#app) generator always installs these packages:\n* jQuery\n* angular\n* angular-resource\n* angular-route\n* angular-cookies\n* angular-sanitzie\n* angular-mocks\n* angular-scenario\n\n## License\n\n[MIT License](http://en.wikipedia.org/wiki/MIT_License)\n',
 188 silly publish   readmeFilename: 'README.md',
 188 silly publish   _id: 'generator-vile@0.0.0',
-188 silly publish   dist: { shasum: '011f63954d808a2c57dc7b71e0e52fb4a5d94896' },
-188 silly publish   _from: '.' }
+188 silly publish   dist: { shasum: '09ca1483518ad00137ebfb7ab8cce4526f955afa' },
+188 silly publish   _from: './' }
 189 verbose url raw generator-vile
 190 verbose url resolving [ 'https://registry.npmjs.org/', './generator-vile' ]
 191 verbose url resolved https://registry.npmjs.org/generator-vile
-192 info trying registry request attempt 1 at 00:42:16
+192 info trying registry request attempt 1 at 00:58:55
 193 http PUT https://registry.npmjs.org/generator-vile
-194 http 400 https://registry.npmjs.org/generator-vile
-195 error publish Failed PUT 400
-196 error Error: illegal_database_name Name: 'error.html'. Only lowercase characters (a-z), digits (0-9), and any of the characters _, $, (, ), +, -, and / are allowed. Must begin with a letter.: generator-vile
+194 http 403 https://registry.npmjs.org/generator-vile
+195 error publish Failed PUT 403
+196 error Error: forbidden cannot modify pre-existing version: 0.0.0
+196 error old={"name":"generator-vile","version":"0.0.0","description":"A generator for Yeoman","keywords":["yeoman-generator"],"homepage":"https://github.com/amctammany/generator-vile","bugs":{"url":"https://github.com/amctammany/generator-vile/issues"},"author":{"name":"Alex McTammany","email":"apmctammany@gmail.com","url":"https://github.com/amctammany"},"main":"app/index.js","repository":{"type":"git","url":"git://github.com/amctammany/generator-vile.git"},"scripts":{"test":"mocha"},"dependencies":{"yeoman-generator":"~0.14.0","wiredep":"^1.3.3"},"devDependencies":{"mocha":"~1.14.0"},"peerDependencies":{"yo":">=1.0.0"},"engines":{"node":">=0.8.0","npm":">=1.2.10"},"licenses":[{"type":"MIT"}],"_id":"generator-vile@0.0.0","dist":{"shasum":"87200173942d629c5920124c8c1c5ef97ec52e48","tarball":"http://registry.npmjs.org/generator-vile/-/generator-vile-0.0.0.tgz"},"_from":".","_npmVersion":"1.4.3","_npmUser":{"name":"amctammany","email":"apmctammany@gmail.com"},"maintainers":[{"name":"amctammany","email":"apmctammany@gmail.com"}]}
+196 error new={"name":"generator-vile","version":"0.0.0","description":"A generator for Yeoman","keywords":["yeoman-generator"],"homepage":"https://github.com/amctammany/generator-vile","bugs":{"url":"https://github.com/amctammany/generator-vile/issues"},"author":{"name":"Alex McTammany","email":"apmctammany@gmail.com","url":"https://github.com/amctammany"},"main":"app/index.js","repository":{"type":"git","url":"git://github.com/amctammany/generator-vile.git"},"scripts":{"test":"mocha"},"dependencies":{"yeoman-generator":"~0.14.0","wiredep":"^1.3.3"},"devDependencies":{"mocha":"~1.14.0"},"peerDependencies":{"yo":">=1.0.0"},"engines":{"node":">=0.8.0","npm":">=1.2.10"},"licenses":[{"type":"MIT"}],"readme":"# generator-vile [![Build Status](https://secure.travis-ci.org/amctammany/generator-vile.png?branch=master)](https://travis-ci.org/amctammany/generator-vile)\u000a\u000a> Yeoman generator that goes beyond the MEAN stack. Uses MongoDB, Express, Angular, and Stylus and is configured for easy deployment to Heroku. Enables easier directory system by calling subgenerators with groups.\u000a\u000a## Usage\u000a\u000aInstall `generator-vile`:\u000a```\u000anpm install -g generator-vile\u000a```\u000a\u000aMake a new directory and `cd` into it:\u000a```\u000amkdir new-project && cd $_\u000a```\u000a\u000arun `yo vile`\u000a```\u000ayo vile\u000a```\u000a\u000aRun `grunt` to build and `grunt server` to start local server\u000a\u000a## Available generators:\u000a\u000a* [vile](#app) (aka [vile:app](#app))\u000a* [vile:controller](#controller)\u000a* [vile:directive](#directive)\u000a* [vile:filter](#filter)\u000a* [vile:route](#route)\u000a* [vile:service](#service)\u000a* [vile:provider](#provider)\u000a* [vile:factory](#factory)\u000a* [vile:class](#class)\u000a* [vile:view](#view)\u000a* [vile:model](#model)\u000a\u000a\u000a### App\u000aSets up a new AngularJS app using the MEAN stack. Automatically links to Twitter Bootstrap via CDN.\u000a\u000aExample:\u000a```bash\u000ayo vile\u000a```\u000a\u000a### Route\u000aGenerates a controller and view within an optional group folder. Configures a route in `app/scripts/app.js` connecting them.\u000a\u000aExample:\u000a```bash\u000ayo angular:route posts:show\u000a```\u000a\u000aProduces `app/scripts/posts/show.js`:\u000a```javascript\u000aangular.module('myApp').controller('ShowCtrl', function ($scope) {\u000a  $scope.foo = 'foo';\u000a});\u000a```\u000a\u000aProduces `app/views/posts/show.html`:\u000a```html\u000a<p>This is the Posts:Show view</p>\u000a```\u000a### Model\u000aGenerates a Mongoose document with given parameters. Adds RESTful backend routes to Express server.\u000aRESTful ID defaults to `name` property if exists, else uses `_id`. Can be overridden by `--identifier` option.\u000aGenerates Angular $resource for frontend.\u000aUse `:` to attach types to property, default is `String`.\u000a\u000aExample:\u000a```bash\u000ayo vile:model post name description date:date ranking:number\u000a```\u000a\u000aProduces `db/post.js`\u000a```javascript\u000a//... Dependencies\u000a\u000avar PostSchema = new Schema({\u000a  name: String,\u000a  description: String,\u000a  date: Date,\u000a  ranking: Number,\u000a  urlString: String\u000a});\u000a\u000aPostSchema.pre('save', function (next) {\u000a  if (this.name) {\u000a    this.urlString = this.name.toLocaleLowerCase().replace(/\\s+/g, '-');\u000a  }\u000a  next();\u000a});\u000a\u000amongoose.model('Post', PostSchema);\u000a```\u000a\u000aProduces `routes/posts.js`:\u000a```javascript\u000avar mongoose = require('mongoose');\u000a\u000amodule.exports = function (app) {\u000a  var Post = mongoose.model('Post');\u000a\u000a  // GET /posts => Index\u000a  app.get('/posts', function (req, res) {\u000a    Post.find()\u000a      .exec(function (err, posts) {\u000a        if (err) { console.log(err); }\u000a        res.send(posts);\u000a      });\u000a  });\u000a\u000a  // GET /posts/id => Show\u000a  app.get('/posts/:id', function (req, res) {\u000a    Post.findOne({urlString: req.params.id})\u000a      .exec(function (err, post) {\u000a        if (err) { console.log(err); }\u000a        res.send(post);\u000a      });\u000a  });\u000a\u000a  // DEL /posts/id => Remove\u000a  app.del('/posts/:id', function (req, res) {\u000a    Post.findOneAndRemove({urlString: req.params.id}, function (err, post) {\u000a      if (err) { console.log(err); }\u000a      res.send(post);\u000a    });\u000a  });\u000a\u000a  // POST /posts => Create\u000a  app.post('/posts', function (req, res) {\u000a    var post = new Post(req.body);\u000a    post.save(function (err) {\u000a      if (err) { console.log(err); }\u000a      res.send(post);\u000a    });\u000a  });\u000a\u000a  // POST /posts/id => Update\u000a  app.post('/posts', function (req, res) {\u000a    Post.findOne({urlString: req.params.id}, function (err, post) {\u000a      if (err) {console.log(err);}\u000a      \u000a      post.name = req.body.name\u000a      \u000a      post.description = req.body.description\u000a      \u000a      post.date = req.body.date\u000a      \u000a      post.ranking = req.body.ranking\u000a      \u000a      post.save(function (err) {\u000a        if (err) { console.log(err); }\u000a        res.send(post);\u000a      });\u000a    });\u000a  });\u000a\u000a};\u000a```\u000a\u000a\u000a### Controller\u000aGenerates a controller file within an optional group folder\u000a\u000aExample:\u000a```bash\u000ayo vile:controller posts:new\u000a```\u000a\u000aProduces `app/scripts/posts/controllers/new.js`:\u000a```javascript\u000aangular.module('myApp').controller('NewCtrl', function ($scope) {\u000a  // ...\u000a});\u000a```\u000a\u000a### Directive\u000aGenerates a directive file within an optional group folder\u000a\u000aExample:\u000a```bash\u000ayo vile:directive posts:details\u000a```\u000a\u000aProduces `app/scripts/posts/directives/details.js`:\u000a```javascript\u000aangular.module('myApp').directive('details', function () {\u000a\u000a  return {\u000a   template: '<div></div>',\u000a   restrict: 'E',\u000a   link: function postLink(scope, element, attrs) {\u000a    element.text('this is the details directive');\u000a   }\u000a  };\u000a});\u000a```\u000a\u000a### Filter\u000aGenerates a filter within an optional group folder\u000a\u000aExample:\u000a```bash\u000ayo vile:filter groupBy\u000a```\u000a\u000aProduces `app/scripts/filters/groupBy.js`:\u000a```javascript\u000aangular.module(myApp).filter('groupBy', function () {\u000a  return function (input) {\u000a    return 'groupBy filter:' + input;\u000a  };\u000a});\u000a```\u000a\u000a### View\u000aGenerates an HTML view file within an optional group folder\u000a\u000aExample:\u000a```bash\u000ayo vile:view posts:new\u000a```\u000a\u000aProduces `app/views/posts/new.html`:\u000a```html\u000a<p>This is the Page:View page</p>\u000a```\u000a\u000a### Service\u000aGenerates an AngularJS service within an optional group folder.\u000a\u000aExample:\u000a```bash\u000ayo vile:service myService\u000a```\u000a\u000aProduces `app/scripts/services/myService.js`:\u000a```javascript\u000aangular.module('myApp').service('myService', function () {\u000a  // ...\u000a});\u000a```\u000a\u000a\u000a### Add to Index\u000aBy default, new scripts are added to index.html.\u000aTo skip this behaviour, pass in the skip-add argument:\u000a```bash\u000ayo vile:service serviceName --skip-add\u000a```\u000a\u000a## Bower Components\u000aThe [app](#app) generator always installs these packages:\u000a* jQuery\u000a* angular\u000a* angular-resource\u000a* angular-route\u000a* angular-cookies\u000a* angular-sanitzie\u000a* angular-mocks\u000a* angular-scenario\u000a\u000a## License\u000a\u000a[MIT License](http://en.wikipedia.org/wiki/MIT_License)\u000a","readmeFilename":"README.md","_id":"generator-vile@0.0.0","dist":{"shasum":"09ca1483518ad00137ebfb7ab8cce4526f955afa","tarball":"http://registry.npmjs.org/generator-vile/-/generator-vile-0.0.0.tgz"},"_from":"./","_npmVersion":"1.4.3","_npmUser":{"name":"amctammany","email":"apmctammany@gmail.com"},"maintainers":[{"name":"amctammany","email":"apmctammany@gmail.com"}]}: generator-vile
 196 error     at RegClient.<anonymous> (/usr/lib/node_modules/npm/node_modules/npm-registry-client/lib/request.js:237:14)
 196 error     at Request.self.callback (/usr/lib/node_modules/npm/node_modules/request/request.js:123:22)
 196 error     at Request.EventEmitter.emit (events.js:98:17)
@@ -245,7 +247,7 @@
 197 error including the npm and node versions, at:
 197 error     <http://github.com/npm/npm/issues>
 198 error System Linux 3.11.0-18-generic
-199 error command "/usr/bin/node" "/usr/bin/npm" "publish"
+199 error command "/usr/bin/node" "/usr/bin/npm" "publish" "./"
 200 error cwd /home/amctammany/newJS/generator-vile
 201 error node -v v0.10.26
 202 error npm -v 1.4.3
