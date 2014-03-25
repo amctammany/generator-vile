@@ -13,15 +13,6 @@ module.exports = function (app) {
         res.send(<%= pluralizedName %>);
       });
   });
-  app.get('/<%= pluralizedName %>/add', function (req, res) {
-    var <%= name %> = new <%= classedName %>({name: 'foobar'});
-    <%= name %>.save(function (err) {
-      if (err) {
-        console.log(err);
-      }
-      res.send(<%= name %>)
-    });
-  });
 
   // GET /<%= pluralizedName %>/id => Show
   app.get('/<%= pluralizedName %>/:id', function (req, res) {
