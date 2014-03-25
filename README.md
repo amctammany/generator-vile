@@ -243,6 +243,23 @@ angular.module('myApp').service('myService', function () {
   // ...
 });
 ```
+
+### Factory
+Generates an AngularJS factory within an optional group folder.
+
+Example:
+```bash
+yo vile:factory factoryName
+```
+
+Produces `app/scripts/services/factoryName.js`:
+```javascript
+angular.module('myApp')
+  .factory('factoryName', function () {
+  // ...
+  });
+```
+
 ### Class
 Generates an AngularJS class within an optional group folder.
 
@@ -261,6 +278,7 @@ angular.module('myApp')
 
     return Renderer;
   });
+```
 
 
 
