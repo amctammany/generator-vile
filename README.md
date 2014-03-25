@@ -243,6 +243,25 @@ angular.module('myApp').service('myService', function () {
   // ...
 });
 ```
+### Class
+Generates an AngularJS class within an optional group folder.
+
+Example:
+```bash
+yo vile:class games:renderer
+```
+
+Produces `app/scripts/games/services/renderer`:
+```javascript
+angular.module('myApp')
+  .factory('Renderer', function () {
+    var Renderer = function () {
+
+    };
+
+    return Renderer;
+  });
+
 
 
 ### Add to Index
