@@ -7,7 +7,9 @@ var app = express();
 app.directory = __dirname;
 
 // Replace with url of your MongoDB server
-var mongoUrl = '';
+//var mongoUrl = '';
+// My default test MongoDB server
+var mongoUrl = 'mongodb://heroku_app23303513:3d223u021e66efbn648j3aa04h@ds033797.mongolab.com:33797/heroku_app23303513';
 
 
 if (mongoUrl) {
