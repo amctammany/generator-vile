@@ -40,12 +40,12 @@ module.exports = function (app) {
     });
   });
 
-  // POST /<%= pluralizedName %>/id => Update
-  app.post('/<%= pluralizedName %>', function (req, res) {
+  // PUT /<%= pluralizedName %>/id => Update
+  app.put('/<%= pluralizedName %>', function (req, res) {
     <%= classedName %>.findOne({urlString: req.params.id}, function (err, <%= name %>) {
       if (err) {console.log(err);}
       <% _.each(_.keys(props), function (key) { %>
-      <%= name %>.<%= key %> = req.body.<%= key %>
+      <%= name %>.<%= key %> = req.body.<%= key %>;
       <% }) %>
       <%= name %>.save(function (err) {
         if (err) { console.log(err); }
