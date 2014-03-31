@@ -12,16 +12,10 @@ var FactoryGenerator = module.exports = function FactoryGenerator(args, options,
 util.inherits(FactoryGenerator, ScriptBase);
 
 FactoryGenerator.prototype.createFactoryFiles = function createFactoryFiles() {
-  var dest;
-  if (this.group) {
-    dest = [this.group, 'services'].join('/')
-  } else {
-    dest = 'services';
-  }
   this.generateSourceAndTest(
     'service/factory',
     'spec/service',
-    dest,
+    'services',
     this.options['skip-add'] || false
   );
 

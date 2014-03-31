@@ -13,16 +13,10 @@ var ControllerGenerator = module.exports = function ControllerGenerator(args, op
 util.inherits(ControllerGenerator, ScriptBase);
 
 ControllerGenerator.prototype.createControllerFiles = function createControllerFiles() {
-  var dest;
-  if (this.group) {
-    dest = [this.group, 'controllers'].join('/')
-  } else {
-    dest = 'controllers';
-  }
   this.generateSourceAndTest(
     'controller',
     'spec/controller',
-    dest,
+    'controllers',
     this.options['skip-add'] || false
   );
 };

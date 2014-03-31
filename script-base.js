@@ -18,15 +18,11 @@ var Generator = module.exports = function Generator() {
   this.scriptAppName = this._.camelize(this.appname) + 'App';
   this.groups = this.name.split(':');
 
-  if (this.groups.length === 1) {
-    this.name = this.groups[0];
-  } else if (this.groups.length === 2) {
-    this.group = this.groups[0];
-    this.name = this.groups[1];
-  } else {
-    throw 'You fucked up';
+  this.name = this.groups.splice(-1, 1)[0];
+  this.group = this.groups.splice(0, 1)[0];
+  if (this.groups.length >= 1) {
+    this.subgroups = this.groups.join('/');
   }
-  console.log(this.fullname);
 
 
   this.cameledName = this._.camelize(this.name);
@@ -90,7 +86,16 @@ Generator.prototype.addScriptToIndex = function (script) {
   }
 };
 
-Generator.prototype.generateSourceAndTest = function (appTemplate, testTemplate, targetDirectory, skipAdd) {
+Generator.prototype.generateSourceAndTest = function (appTemplate, testTemplate, targetType, skipAdd) {
+  // Add group and subgroups
+  var targetDirectory = targetType;
+  if (this.group) {
+    if (this.subgroups) {
+      targetDirectory = [this.group, targetType, this.subgroups].join('/');
+    } else {
+      targetDirectory = [this.group, targetType].join('/')
+    }
+  }
   // Services use classified names
   if (this.generatorName.toLowerCase() === 'service') {
     this.cameledName = this.classedName;

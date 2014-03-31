@@ -138,18 +138,18 @@ module.exports = function (app) {
     });
   });
 
-  // POST /posts/id => Update
-  app.post('/posts', function (req, res) {
+  // PUT /posts/id => Update
+  app.put('/posts', function (req, res) {
     Post.findOne({urlString: req.params.id}, function (err, post) {
       if (err) {console.log(err);}
       
-      post.name = req.body.name
+      post.name = req.body.name;
       
-      post.description = req.body.description
+      post.description = req.body.description;
       
-      post.date = req.body.date
+      post.date = req.body.date;
       
-      post.ranking = req.body.ranking
+      post.ranking = req.body.ranking;
       
       post.save(function (err) {
         if (err) { console.log(err); }

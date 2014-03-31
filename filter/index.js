@@ -11,16 +11,10 @@ var FilterGenerator = module.exports = function FilterGenerator(args, options, c
 util.inherits(FilterGenerator, ScriptBase);
 
 FilterGenerator.prototype.createFilterFiles = function createFilterFiles() {
-  var dest;
-  if (this.group) {
-    dest = [this.group, 'filters'].join('/')
-  } else {
-    dest = 'filters';
-  }
   this.generateSourceAndTest(
     'filter',
     'spec/filter',
-    dest,
+    'filters',
     this.options['skip-add'] || false
   );
 

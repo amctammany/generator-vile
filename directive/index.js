@@ -11,16 +11,10 @@ var DirectiveGenerator = module.exports = function DirectiveGenerator(args, opti
 util.inherits(DirectiveGenerator, ScriptBase);
 
 DirectiveGenerator.prototype.createDiretiveFiles = function createDiretiveFiles() {
-  var dest;
-  if (this.group) {
-    dest = [this.group, 'directives'].join('/')
-  } else {
-    dest = 'directives';
-  }
   this.generateSourceAndTest(
     'directive',
     'spec/directive',
-    dest,
+    'directives',
     this.options['skip-add'] || false
   );
 

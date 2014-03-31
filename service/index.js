@@ -11,16 +11,10 @@ var ServiceGenerator = module.exports = function ServiceGenerator(args, options,
 util.inherits(ServiceGenerator, ScriptBase);
 
 ServiceGenerator.prototype.createServiceFiles = function createServiceFiles() {
-  var dest;
-  if (this.group) {
-    dest = [this.group, 'services'].join('/')
-  } else {
-    dest = 'services';
-  }
   this.generateSourceAndTest(
     'service/service',
     'spec/service',
-    dest,
+    'services',
     this.options['skip-add'] || false
   );
 

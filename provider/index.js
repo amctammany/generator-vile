@@ -10,16 +10,10 @@ var ProviderGenerator = module.exports = function ProviderGenerator(args, option
 util.inherits(ProviderGenerator, ScriptBase);
 
 ProviderGenerator.prototype.createProviderFiles = function createProviderFiles() {
-  var dest;
-  if (this.group) {
-    dest = [this.group, 'services'].join('/')
-  } else {
-    dest = 'services';
-  }
   this.generateSourceAndTest(
     'provider',
     'spec/service',
-    dest,
+    'services',
     this.options['skip-add'] || false
   );
 

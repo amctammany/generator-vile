@@ -10,16 +10,10 @@ var ClassGenerator = module.exports = function ClassGenerator(args, options, con
 util.inherits(ClassGenerator, ScriptBase);
 
 ClassGenerator.prototype.createClassFiles = function createClassFiles() {
-  var dest;
-  if (this.group) {
-    dest = [this.group, 'services'].join('/')
-  } else {
-    dest = 'services';
-  }
   this.generateSourceAndTest(
     'class',
     'spec/class',
-    dest,
+    'services',
     this.options['skip-add'] || false
   );
 
