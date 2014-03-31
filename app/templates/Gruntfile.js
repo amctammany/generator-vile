@@ -1,7 +1,9 @@
-// Generated on 2013-07-16 using generator-angular 0.3.0
+// Generated on <%= (new Date).toISOString().split('T')[] %> using <%= pkg.name %> <%= pkg.version %>
 'use strict';
 
 var path = require('path');
+var LIVERELOAD_PORT = 35729;
+
 
 // # Globbing
 // for performance reasons we're only matching one level down:
@@ -18,7 +20,6 @@ module.exports = function (grunt) {
     app: 'app',
     dist: 'dist'
   };
-  grunt.loadNpmTasks('grunt-express');
 
   try {
     yeomanConfig.app = require('./bower.json').appPath || yeomanConfig.app;
@@ -40,14 +41,20 @@ module.exports = function (grunt) {
         tasks: ['coffee:test']
       },
       stylus: {
-        files: [
-          '<%= yeoman.app %>/styles/src/**/*.styl'
-        ],
-        tasks: 'stylus'
+        files: ['<%= yeoman.app %>/styles/src/**/*.styl'],
+        tasks: ['stylus']
       },
-      compass: {
-        files: ['<%= yeoman.app %>/styles/{,*/}*.{scss,sass}'],
-        tasks: ['compass:server']
+      livereload: {
+        options: {
+          livereload: LIVERELOAD_PORT
+        },
+        files: [
+          '<%= yeoman.app %>/**/*.html',
+          '{.tmp,<%= yeoman.app %>}/styles/**/*.css',
+          '{.tmp,<%= yeoman.app %>}/scripts/**/*.js',
+          '<%= yeoman.app %>/images/**/*.{png,jpg,jpeg,gif,webp,svg}'
+        ],
+
       }
     },
     stylus: {
@@ -70,7 +77,7 @@ module.exports = function (grunt) {
       livereload: {
         options: {
           server: path.resolve('app.js'),
-          livereload: true,
+          livereload: false,
           serverreload: false,
           bases: [path.resolve('./.tmp'), path.resolve(__dirname, yeomanConfig.app)]
         }
@@ -140,27 +147,6 @@ module.exports = function (grunt) {
           dest: '.tmp/spec',
           ext: '.js'
         }]
-      }
-    },
-    compass: {
-      options: {
-        sassDir: '<%= yeoman.app %>/styles',
-        cssDir: '.tmp/styles',
-        generatedImagesDir: '.tmp/images/generated',
-        imagesDir: '<%= yeoman.app %>/images',
-        javascriptsDir: '<%= yeoman.app %>/scripts',
-        fontsDir: '<%= yeoman.app %>/styles/fonts',
-        importPath: '<%= yeoman.app %>/bower_components',
-        httpImagesPath: '/images',
-        httpGeneratedImagesPath: '/images/generated',
-        httpFontsPath: '/styles/fonts',
-        relativeAssets: false
-      },
-      dist: {},
-      server: {
-        options: {
-          debugInfo: true
-        }
       }
     },
     // not used since Uglify task does concat,
@@ -265,15 +251,15 @@ module.exports = function (grunt) {
     concurrent: {
       server: [
         'coffee:dist',
-        'compass:server'
+        'stylus'
       ],
       test: [
         'coffee',
-        'compass'
+        'stylus'
       ],
       dist: [
         'coffee',
-        'compass:dist',
+        'stylus',
         'imagemin',
         'htmlmin'
       ]
@@ -319,7 +305,6 @@ module.exports = function (grunt) {
       'clean:server',
       'concurrent:server',
       'express:livereload',
-      'stylus',
       'open',
       'watch'
     ]);
@@ -334,7 +319,6 @@ module.exports = function (grunt) {
 
   grunt.registerTask('build', [
     'clean:dist',
-    'stylus',
     'useminPrepare',
     'concurrent:dist',
     'concat',
