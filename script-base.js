@@ -96,6 +96,11 @@ Generator.prototype.generateSourceAndTest = function (appTemplate, testTemplate,
       targetDirectory = [this.group, targetType].join('/')
     }
   }
+  // Add group prefix to controller name
+  //if ((this.generatorName.toLowerCase() === 'controller' || this.generatorName.toLowerCase() === 'route') && this.group) {
+    //console.log('classifing controller with group');
+    //this.classedName = this._.classify(this.group) + this._.classify(this.name);
+  //}
   // Services use classified names
   if (this.generatorName.toLowerCase() === 'service') {
     this.cameledName = this.classedName;

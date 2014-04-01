@@ -31,6 +31,10 @@ util.inherits(RouteGenerator, ScriptBase);
 
 RouteGenerator.prototype.rewriteAppJs = function () {
   this.classedName = this._.classify(this.name);
+  if (this.group) {
+    this.classedName = this._.classify(this.group) + this._.classify(this.name);
+  }
+
   var dest, route;
   if (this.group) {
     dest = ['views', this.group].join('/') + '/';

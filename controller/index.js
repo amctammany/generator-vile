@@ -13,6 +13,10 @@ var ControllerGenerator = module.exports = function ControllerGenerator(args, op
 util.inherits(ControllerGenerator, ScriptBase);
 
 ControllerGenerator.prototype.createControllerFiles = function createControllerFiles() {
+  console.log(this.group);
+  if (this.group) {
+    this.classedName = this._.classify(this.group) + this._.classify(this.name);
+  }
   this.generateSourceAndTest(
     'controller',
     'spec/controller',
