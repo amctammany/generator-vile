@@ -57,6 +57,7 @@ module.exports = function (grunt) {
 
       }
     },
+
     stylus: {
       compile: {
         options: {
@@ -95,6 +96,17 @@ module.exports = function (grunt) {
         }
       }
     },
+
+    jsdoc: {
+      dist: {
+        src: ['<%= yeoman.app %>/scripts/**/*.js'],
+        options: {
+          destination: 'doc'
+        }
+      }
+
+
+    }
 
     bowerInstall: {
       app: {
