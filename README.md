@@ -19,7 +19,16 @@ run `yo vile`
 yo vile
 ```
 
-Run `grunt` to build and `grunt server` to start local server
+Run `grunt` to build and `grunt server` to start local server.
+
+All generators (except `model`) are called using the following syntax: `[group:[subgroup1:subgroup2...]]:name`
+This will generate the given files inside the group folder if given.  Subgroups are created inside the generators type folder.
+For example:
+```bash
+yo vile:service games:entities:shapes:ball
+```
+Will create `app/scripts/games/services/entities/shape/ball.js`.
+This allows subgrouping within a general angular type.
 
 ## Available generators:
 
@@ -179,6 +188,7 @@ angular.module('myApp').controller('NewCtrl', function ($scope) {
 
 ### Directive
 Generates a directive file within an optional group folder
+Add `--template` to use a seperate template file created in `app/templates`
 
 Example:
 ```bash
