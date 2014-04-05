@@ -41,7 +41,7 @@ module.exports = function (app) {
   });
 
   // PUT /<%= pluralizedName %>/id => Update
-  app.put('/<%= pluralizedName %>', function (req, res) {
+  app.put('/<%= pluralizedName %>/:id', function (req, res) {
     <%= classedName %>.findOne({urlString: req.params.id}, function (err, <%= name %>) {
       if (err) {console.log(err);}
       <% _.each(_.keys(props), function (key) { %>
