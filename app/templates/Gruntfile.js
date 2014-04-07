@@ -104,9 +104,7 @@ module.exports = function (grunt) {
           destination: 'doc'
         }
       }
-
-
-    }
+    },
 
     bowerInstall: {
       app: {
